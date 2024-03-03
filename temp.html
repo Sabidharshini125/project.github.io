@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="tel.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+   
+</head>
+
+<style>
+    .main
+{
+   width: 400px;
+   height: 300px;
+  position: absolute;
+  background-color: #687ae2;
+  border-radius: 15px;
+  border: 6px solid rgb(7, 27, 32);
+  color: black;
+  font-size:30px;
+  font-style: bold;
+  
+  
+}
+*{
+   padding: 0;
+   margin: 0;
+   font-family: 'poppins', sans-serif;
+}
+body{
+   background-color: #d1d3363b;
+   display: grid;
+   height: 700px;
+   place-items: center;
+   background: url("https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=600") no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+#it
+{
+   position: relative;
+   width: 370px;
+   height: 60px;
+   /* display: flex; */
+   margin: 10px;
+background-color:#fbfcff;
+border: 5px solid rgb(14, 8, 39);
+border-radius: 15px;
+}
+#cr
+{
+   position: relative;
+   width: 300px;
+   height: 60px;
+   left: 30px;
+   /* display: flex; */
+   margin: 10px;
+background-color:#0cae37;
+border: 5px solid rgb(11, 4, 43);
+/* border-radius: 15px; */
+font-size: 20px;
+   place-items:center;
+   font-style: bold;
+}
+button{
+   width: 100px;
+   height: 30px;
+   padding: 30px 90px;
+   margin:10px 4px;
+   border: 3px solid black;
+   border-radius: 15px; 
+   /* display: flex; */
+  
+   
+    /* text-align: center;  */
+   position: relative;
+   letter-spacing: normal;
+   cursor: pointer;
+   /* background-color:#19e48c; */
+   color: rgb(22, 12, 4);
+   transition: 0.5s;
+   top: 10px;
+   left: 4px;
+   right:10px; 
+   
+
+   
+   
+}
+
+#cs
+{
+   /* margin: 10px 4px; */
+border:3px solid black; 
+background-color: rgb(166, 131, 194);
+/* top: 10px;
+left: 10px; */
+font-size: 20px;
+   place-items:center;
+   font-style: bold;
+}
+#ft
+{
+
+ /* margin: 10px 6px; */
+border:3px solid black; 
+background-color: #44887b;
+font-size: 16px;
+   text-align:center;
+   font-style: bold;
+   width:50px;
+   height:20px ;
+}
+
+button:hover {
+    opacity: 0.6;
+    
+  }
+</style>
+<body>
+  
+   <!-- <h1>Temperature convertor</h1/> -->
+   
+    <div class="main">
+      
+        <input type="text" id = 'it'>
+        <div class="btn" style="background: color #e1e1e1;">
+          <button  id="cs" type="button"  onclick="celsius()" >Celsius</button>
+           
+          <button id="ft" type="button" onclick ="faher()"> Faherenheit</button>
+          <!-- <button id="st" type="button" onclick ="Solve()"> Solve</button> -->
+          <button id="cr" type="button" onclick ="Clear()"> Clear</button>
+         </div>
+        </div>
+
+       
+</body>
+</html>
